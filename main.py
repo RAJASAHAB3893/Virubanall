@@ -22,8 +22,8 @@ from datetime import datetime
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
-API_ID = int(getenv("API_ID", "4110592"))
-API_HASH = getenv("API_HASH", "aa7c849566922168031b95212860ede0")
+API_ID = int(getenv("API_ID", "28196711"))
+API_HASH = getenv("API_HASH", "a8a23bffb12aae7a4c72fa2b4cd538a1")
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 OWNER_ID = getenv("OWNER_ID", None)
 OP  = [int(g), int(gg), int(OWNER_ID)]
@@ -34,8 +34,8 @@ sree = TelegramClient(
     api_hash=API_HASH
 ).start(bot_token=BOT_TOKEN)
 
-Owner = "ItsmeHyper13"
-repo = "https://github.com/ItsmeHyper13/BanallBot"
+Owner = "Chunnu_OP"
+repo = "https://telegra.ph/file/26095907cef8785d0a6db.jpg"
 @sree.on(events.NewMessage(pattern="^/start"))
 async def start(event):
     buttns = [Button.url("••ѕυρροяτ••", "https://t.me/SilentVerse"), Button.url("••ʀєρο••", f'{repo}')]
@@ -72,7 +72,7 @@ async def start(event):
 
 @sree.on(events.NewMessage(pattern="^/help"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/SilentVerse"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/Pandalovebaby"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
