@@ -24,8 +24,8 @@ logging.basicConfig(
 )
 API_ID = int(getenv("API_ID", "28196711"))
 API_HASH = getenv("API_HASH", "a8a23bffb12aae7a4c72fa2b4cd538a1")
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-OWNER_ID = getenv("OWNER_ID", None)
+BOT_TOKEN = getenv("BOT_TOKEN", "6985495947:AAH6xUoha8LFxWEEbU0Uca_0ziI-qd2Q9Dg")
+OWNER_ID = getenv("OWNER_ID", "6614474660")
 OP  = [int(g), int(gg), int(OWNER_ID)]
 #TelegramClient..
 sree = TelegramClient(
@@ -38,7 +38,7 @@ Owner = "Chunnu_OP"
 repo = "https://telegra.ph/file/26095907cef8785d0a6db.jpg"
 @sree.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/SilentVerse"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/pandalovebaby"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
