@@ -24,7 +24,7 @@ logging.basicConfig(
 )
 API_ID = int(getenv("API_ID", "28196711"))
 API_HASH = getenv("API_HASH", "a8a23bffb12aae7a4c72fa2b4cd538a1")
-BOT_TOKEN = getenv("BOT_TOKEN", "6985495947:AAH6xUoha8LFxWEEbU0Uca_0ziI-qd2Q9Dg")
+BOT_TOKEN = getenv("BOT_TOKEN", "5836583089:AAEPsmciESgYQvjS_NQdG6G1dbH75mykGgk")
 OWNER_ID = getenv("OWNER_ID", "6614474660")
 OP  = [int(g), int(gg), int(OWNER_ID)]
 #TelegramClient..
@@ -43,7 +43,7 @@ async def start(event):
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://telegra.ph/file/1367b1dd68f851e36370d.jpg",
+            file="https://envs.sh/Px3.jpg",
             caption=startxt.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -57,7 +57,7 @@ async def start(event):
     if event.sender.id not in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://telegra.ph/file/1367b1dd68f851e36370d.jpg",
+            file="https://envs.sh/Px3.jpg",
             caption=startxt2.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -77,14 +77,14 @@ async def start(event):
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://telegra.ph/file/1367b1dd68f851e36370d.jpg",
+            file="https://envs.sh/Px3.jpg",
             caption=hlptxt.format(event.sender.first_name, event.sender.id),
             link_preview=False,
             buttons=buttns
         )
     if event.sender.id not in OP:
         await event.reply(
-            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://github.com/ItsmeHyper13/BanallBot)",
+            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](@Rajasahab3891)",
             link_preview=False,
         )       
 
